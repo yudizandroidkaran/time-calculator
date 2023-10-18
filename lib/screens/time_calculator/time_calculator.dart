@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:intl/intl.dart';
 import 'package:sizer/sizer.dart';
 import 'package:time_calculator/components/widgets/button/custom_button.dart';
 import 'package:time_calculator/components/widgets/input_field/titled_text_field.dart';
 import 'package:time_calculator/components/widgets/utils/widget_utils.dart';
 import 'package:time_calculator/gen/colors.gen.dart';
 import 'package:time_calculator/resources/lang/strings.dart';
-import 'package:time_calculator/screens/splash/time_calculator_controller.dart';
+import 'package:time_calculator/screens/time_calculator/time_calculator_controller.dart';
 
 import '../../gen/assets.gen.dart';
 
@@ -96,8 +95,8 @@ class TimeCalculator extends StatelessWidget {
                           ),
                           addHeight(7.h),
                           CustomButton(
-                              onClick: () {
-                                _timeCalculatorController.addColon();
+                              onClick: () async {
+                                await _timeCalculatorController.addColon();
                                 _timeCalculatorController.calculateTime();
                               },
                               buttonText: AppStrings.calculate),

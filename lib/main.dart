@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:sizer/sizer.dart';
 import 'package:time_calculator/resources/theme/themes.dart';
-import 'package:time_calculator/screens/splash/time_calculator.dart';
+import 'package:time_calculator/screens/time_calculator/time_calculator.dart';
 import 'package:time_calculator/utils/bindings.dart';
 
 void main() {

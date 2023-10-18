@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
-import 'package:time_calculator/screens/splash/time_calculator_controller.dart';
+
+import '../screens/time_calculator/time_calculator_controller.dart';
 
 class AppBindings implements Bindings {
   @override
